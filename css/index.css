@@ -1,42 +1,151 @@
 body {
-    background-color: rgb(55, 65, 62);
-    color: rgb(228, 228, 64);
-    font-family: "Workbench", sans-serif;
-    padding: 25px;
+    background-image: url("./images/Fl.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(201, 210, 140);
+    text-align: center;
+    padding-top: 100;
 }
 
 a {
-    color: darkorange
+    font-size: 20px;
+    color: rgb(41, 50, 222)
 }
 
 h1 {
-    color: rgb(55, 65, 55);
+    text-align: center;
     width: 100px;
-    font-size: 25px;
-    background: yellowgreen;
+    font-size: 35px;
+    text-align: center;
     margin: 30px 120px;
     padding: 10px, 10px;
+    text-align: center;
 }
 
 h2 {
-    color: rgb(179, 188, 177);
-    font-size: 25px;
-    text-align: center;
-    color: rgb(55, 65, 55);
-    width: 160px;
-    font-size: 25px;
+    background-repeat: no-repeat;
+    color: rgb(22, 15, 21);
+    width: auto;
+    font-size: 35px;
     background: yellowgreen;
-    margin: 30px 100px;
+    margin: 50px 50px;
     padding: 10px, 10px;
+    text-align: center;
 }
 
-#Experience {
-    border-block-style: dotted;
-    writing-mode: horizontal-tb;
-
+#experience {
+    display: flex;
+  
+   
 }
 
-.intro {
-    font-size: 24px;
-    color: aquamarine;
+.Alma {
+   display: flex;
+   font-size: 25px;
+   margin: 10px;
+}
+
+.job-title {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.dates-worked {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    color: #100e0e;
+}
+
+.job-description {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    color: #333;
+}
+
+.Atakent {
+    display: flex;
+    font-size: 25px;
+    margin: 10px;
+    
+ }
+ 
+ .job-title {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    color: #100e0e;
+ }
+ 
+ .dates-worked {
+     flex: 1;
+     text-align: center;
+     color: #100e0e;
+
+ }
+ 
+ .job-description {
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     color: #333;
+ }
+
+ .KazATC {
+    display: flex;
+    font-size: 25px;
+    margin: 10px;
+ }
+ 
+ .job-title {
+    display: flex;
+    color: #100e0e;
+ 
+ }
+ 
+ .dates-worked {
+     flex: 1;
+     text-align: center;
+     color: #100e0e;
+ }
+ 
+ .job-description {
+     display: flex;
+     flex-direction: column;
+     justify-content: left;
+     color: #333;
+ }
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: .3s;
+}
+
+.navbar a:hover:before {
+    width: 100%;
+}
+
+#About {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    ;
+    font-size: 35px;
+    font-style: calc();
+}
+
+p {
+    font-size: 35px;
 }
