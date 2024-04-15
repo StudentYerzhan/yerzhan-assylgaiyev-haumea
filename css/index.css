@@ -35,8 +35,6 @@ h2 {
 
 #experience {
     display: flex;
-  
-   
 }
 
 .Alma {
@@ -51,15 +49,17 @@ h2 {
 }
 
 .dates-worked {
-    flex-direction: column-reverse;
-    justify-content: space-between;
+    display: flex;
+    align-items: start;
+    align-self: start;
     color: #100e0e;
 }
 
 .job-description {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: #333;
 }
 
@@ -67,27 +67,18 @@ h2 {
     display: flex;
     font-size: 25px;
     margin: 10px;
-    
  }
  
  .job-title {
-    flex-direction: column-reverse;
-    justify-content: space-between;
     color: #100e0e;
  }
  
  .dates-worked {
-     flex: 1;
-     text-align: center;
      color: #100e0e;
-
  }
  
  .job-description {
-     display: flex;
-     flex-direction: column;
-     justify-content: end;
-     color: #333;
+
  }
 
  .KazATC {
@@ -97,23 +88,18 @@ h2 {
  }
  
  .job-title {
-    display: flex;
     color: #100e0e;
- 
  }
  
  .dates-worked {
      flex: 1;
-     text-align: center;
      color: #100e0e;
  }
  
  .job-description {
-     display: flex;
-     flex-direction: column;
-     justify-content: left;
      color: #333;
  }
+
 .navbar a {
     position: relative;
     font-size: 20px;
