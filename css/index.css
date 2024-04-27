@@ -4,123 +4,25 @@ body {
     background-repeat: no-repeat;
     color: rgb(201, 210, 140);
     text-align: center;
-    padding-top: 100;
+    background-attachment: fixed;
+    margin: 0px;
+    min-height: 100vh;
+    font-size: 1em;
+}
+header {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(50, 59, 66);
+    padding: 0.625em;
 }
 
-a {
-    font-size: 20px;
-    color: rgb(41, 50, 222)
-}
-
-h1 {
-    text-align: center;
-    width: 100px;
-    font-size: 35px;
-    text-align: center;
-    margin: 30px 120px;
-    padding: 10px, 10px;
-    text-align: center;
-}
-
-h2 {
-    background-repeat: no-repeat;
-    color: rgb(22, 15, 21);
-    width: auto;
-    font-size: 35px;
-    background: yellowgreen;
-    margin: 50px 50px;
-    padding: 10px, 10px;
-    text-align: center;
-}
-
-#experience {
-    display: flex;
-  
-   
-}
-
-.Alma {
-   display: flex;
-   font-size: 25px;
-   margin: 10px;
-}
-
-.job-title {
-    flex-direction: column-reverse;
-    justify-content: space-between;
-}
-
-.dates-worked {
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    color: #100e0e;
-}
-
-.job-description {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    color: #333;
-}
-
-.Atakent {
-    display: flex;
-    font-size: 25px;
-    margin: 10px;
-    
- }
- 
- .job-title {
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    color: #100e0e;
- }
- 
- .dates-worked {
-     flex: 1;
-     text-align: center;
-     color: #100e0e;
-
- }
- 
- .job-description {
-     display: flex;
-     flex-direction: column;
-     justify-content: end;
-     color: #333;
- }
-
- .KazATC {
-    display: flex;
-    font-size: 25px;
-    margin: 10px;
- }
- 
- .job-title {
-    display: flex;
-    color: #100e0e;
- 
- }
- 
- .dates-worked {
-     flex: 1;
-     text-align: center;
-     color: #100e0e;
- }
- 
- .job-description {
-     display: flex;
-     flex-direction: column;
-     justify-content: left;
-     color: #333;
- }
 .navbar a {
     position: relative;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #ffff;
     font-weight: 500;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 1em;
 }
 
 .navbar a::before {
@@ -129,7 +31,7 @@ h2 {
     top: 100%;
     left: 0;
     width: 0;
-    height: 2px;
+    height: .125em;
     background: #ffff;
     transition: .3s;
 }
@@ -139,13 +41,108 @@ h2 {
 }
 
 #About {
-    padding-top: 50px;
-    padding-bottom: 100px;
-    ;
-    font-size: 35px;
+    padding-top: 0.142em;
+    padding-bottom: .428em;
+    /* font-size: 1.75em; */
     font-style: calc();
 }
+p1 {
+    font-size: 1.75em;
+}
 
-p {
-    font-size: 35px;
+a {
+    font-size: 1.25em;
+    color: rgb(41, 50, 222)
+}
+
+h1 {
+  margin: 0px;
+  padding-bottom: 0.625em;
+
+}
+
+h2 {
+    background-repeat: no-repeat;
+    color: rgb(22, 15, 21);
+    width: auto;
+    font-size: 1.75em;
+    background: yellowgreen;
+    margin: 1.428em, 1.428em;
+    padding: 0.285em, 0.285em;
+    text-align: center;
+}
+
+#Experience {
+    background-color: antiquewhite;
+    padding-bottom: 1.250em;
+    color:rgb(41, 50, 222);
+}
+
+    .Work_experience {
+        display: grid;
+        font-size: 1.562em;
+    }
+    /* AlmaTeamLLC */
+    .job-title1 {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+        margin: 5px;
+    }
+    .dates-worked1 {
+        grid-column: 1 /span 1;
+        grid-row: 2;
+        margin: 5px;
+    }
+    .job-description1 {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+    }
+    /* ICE Atakent-Expo */
+    .job-title2 {
+       grid-column:  1 / span 1;
+       grid-row: 3;
+       margin: 5px;
+    }
+    .dates-worked2 {
+        grid-column: 1 /span 1;
+        grid-row: 4;
+        margin: 5px;
+    }
+    .job-description2 {
+        grid-column: 3;
+        grid-row: 3 / span 2;
+    }
+    /* University KazATC */
+    .job-title3 {
+        margin: 10px;
+        grid-column: 1 / span1;
+        grid-row: 5;
+    }
+    .dates-worked3 {
+        grid-column: 1 /span 1;
+        grid-row: 6;
+        margin: 5px;
+    }
+    .job-description3 {
+        grid-column: 3;
+        grid-row: 5 / span 2;
+    }
+/* my connect links */
+li {
+    margin: 0.625em, 0.625em;
+    padding: 0.625em, 0.625em;
+    text-align: start;
+    margin: 0.312em;
+}
+@media  screen and (max-width: 75em) {
+  
+}
+@media screen and  (max-width: 62.375em) {
+
+}
+@media screen  and (max-width: 48em) {
+    
+}
+@media screen and (max-width: 36em) {
+    
 }
