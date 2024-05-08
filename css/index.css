@@ -2,7 +2,7 @@ body {
     background-image: url("./images/Fl.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    color: rgb(201, 210, 140);
+    color: rgb(255, 255, 255);
     text-align: center;
     background-attachment: fixed;
     margin: 0px;
@@ -129,11 +129,13 @@ h2 {
     }
 /* my connect links */
 li {
+    list-style: none;
     margin: 0.625em, 0.625em;
     padding: 0.625em, 0.625em;
     text-align: start;
     margin: 0.312em;
 }
+
 @media  screen and (max-width: 75em) {
   
 }
