@@ -135,7 +135,9 @@ li {
     text-align: start;
     margin: 0.312em;
 }
-
+/* #message {
+    display: none; */
+/* } */
 @media  screen and (max-width: 75em) {
   
 }
