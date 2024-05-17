@@ -34,3 +34,83 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 
 }
+// 
+// Lesson #14   ###################################################################
+// 
+// Select the leave_message form
+const messageForm = document.querySelector('[name=leave_message]');
+
+// Add event listener for the submit event
+    messageForm.addEventListener("submit", (event)  => {
+    // Prevent the default form submission behavior
+        event.preventDefault()
+    console.log(event.target.usersName.value);
+
+    // Retrieve form field values
+    const usersName = event.target.usersName.value;
+    const usersEmail = event.target.usersEmail.value;
+    const usersMessage = event.target.usersMessage.value;
+
+    // Log form field values
+    console.log("Name:", usersName);
+    console.log("Email:", usersEmail);
+    console.log("Message:", usersMessage);
+
+   
+
+    // Select the message section and message list
+    const messageSection = document.querySelector('#messages');
+    const messageList = messageSection.querySelector('ul');
+   
+    if (messageSection.style.display === 'none') {
+        messageSection.style.display = 'block'
+    }
+    // Create a new message item
+    const newMessage = document.createElement('li');
+    newMessage.innerHTML = `
+        <a href="mailto:${usersEmail}">${usersName}</a>: 
+        <span>${usersMessage}</span>
+    `;
+
+    // Create a remove button
+    const removeButton = document.createElement('button');
+    removeButton.innerText = "Remove";
+    removeButton.type = "button";
+    
+    // Add event listener to the remove button
+    removeButton.addEventListener('click', function() {
+        // Remove the message entry from the DOM
+        const entry = removeButton.parentNode;
+        entry.remove();
+    });
+    // create a edit button
+    const editButton = document.createElement('button');
+    editButton.innerText ="Edit";
+    editButton.type = "button";
+
+    // add event listener
+    editButton.addEventListener("click", function() {
+        // edit message
+        const newMessage = prompt("Enter new/modified message:");
+        if (newMessage !== null) {
+            span.innerText = newMessage;
+        }
+    });
+
+    // Append edit button to the newMessage element
+    newMessage.appendChild(editButton);
+    
+
+    // Append remove button to the new message
+    newMessage.appendChild(removeButton);
+
+    // Append new message to the message list
+    messageList.appendChild(newMessage);
+    
+    console.log(messageList.children.length);
+    
+      
+     // Clear the form after submission
+     console.log(messageSection)
+     messageForm.reset();
+});
